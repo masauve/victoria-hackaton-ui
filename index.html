@@ -22,14 +22,7 @@
   <script>
   	$(document).ready(function() {
 	    $('#example').DataTable( {
-	        "ajax": 'http://contact-server-user01-hackaton.apps.victoria.openshift3roadshow.com/listContacts',
-
-						columns: [
-             { data: "contact.name" },
-             { data: "contact.phone" },
-             { data: "contact.profession" },
-             { data: "contact.id" }
-         ]
+	        "ajax": 'http://contact-server-user01-hackaton.apps.victoria.openshift3roadshow.com/listContacts'
 	 	    } );
 		} );
   </script>
