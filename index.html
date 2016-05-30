@@ -1,0 +1,30 @@
+<html lang="us">
+<body>
+	<table id="example" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Contact Name</th>
+                <th>Phone</th>
+                <th>Profession</th>
+                <th>Id</th>
+            </tr>
+        </thead>
+    </table>
+
+ <link rel="stylesheet" type="text/css" href="datatables.css"/>
+ <link rel="stylesheet" type="text/css" href="jQueryUI-1.11.4/jquery-ui.theme.css"/>
+ <link rel="stylesheet" type="text/css" href="jQueryUI-1.11.4/jquery-ui.structure.min.css"/>
+ <link rel="stylesheet" type="text/css" href="jQueryUI-1.11.4/jquery-ui.css"/>
+
+	<script type="text/javascript" src="jQuery-2.1.4/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="jQueryUI-1.11.4/jquery-ui.js"></script>
+	<script type="text/javascript" src="datatables.js"></script>
+  <script>
+  	$(document).ready(function() {
+	    $('#example').DataTable( {
+	        "ajax": 'http://contact-server-user01-hackaton.apps.victoria.openshift3roadshow.com/listContacts'
+	    } );
+		} );
+  </script>
+</body>
+</html>
