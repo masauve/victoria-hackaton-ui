@@ -3,8 +3,8 @@
 	<table id="example" class="display" cellspacing="0" width="100%">
         <thead>
             <tr>
-                <th>name</th>
-                <th>phone</th>
+                <th>Contact Name</th>
+                <th>Phone</th>
                 <th>Profession</th>
                 <th>Id</th>
             </tr>
@@ -22,7 +22,13 @@
   <script>
   	$(document).ready(function() {
 	    $('#example').DataTable( {
-	        "ajax": 'http://contact-server-user01-hackaton.apps.victoria.openshift3roadshow.com/listContacts'
+	        "ajax": 'http://contact-server-user01-hackaton.apps.victoria.openshift3roadshow.com/listContacts',
+					columns: [
+			       { data: 'name' },
+			       { data: 'phone' },
+			       { data: 'profession' },
+			       { data: 'id' }
+	 ]
 	    } );
 		} );
   </script>
