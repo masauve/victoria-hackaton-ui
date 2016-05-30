@@ -24,10 +24,10 @@
 	    $('#example').DataTable( {
 	        "ajax": 'http://contact-server-user01-hackaton.apps.victoria.openshift3roadshow.com/listContacts',
 					columns: [
-			       { data: 'name' },
-			       { data: 'phone' },
-			       { data: 'profession' },
-			       { data: 'id' }
+			       { ajax: 'name' },
+			       { ajax: 'phone' },
+			       { ajax: 'profession' },
+			       { ajax: 'id' }
 	 ]
 	    } );
 		} );
